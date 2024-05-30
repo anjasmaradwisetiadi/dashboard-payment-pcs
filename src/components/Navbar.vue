@@ -3,7 +3,7 @@
         <transition name="fade" v-if="nameRoutePath === 'dashboard'">
             <div class="w-screen flex flex-row justify-between title text-center pb-3 pt-2 mb-8 px-4 z-10 fixed bg-white ">
                 <div class="w-1/2 flex justify-start">
-                    <h3 class="text-2xl text-red-primary font-bold ">KerjaYuk !</h3>
+                    <h3 class="text-xl text-red-primary font-bold ">KerjaYuk !</h3>
                 </div>
                 <div class="w-1/2 flex justify-end items-center">
                     <div class="cursor-pointer" @click="goNotification()">
@@ -21,7 +21,7 @@
                             arrow_back
                         </span>
                     </div>
-                    <h3 class="text-2xl text-red-primary font-semibold ">Notification</h3>
+                    <h3 class="text-xl text-red-primary font-semibold ">Notification</h3>
                 </div>
         </transition>
     </div>
