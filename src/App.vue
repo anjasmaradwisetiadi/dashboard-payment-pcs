@@ -1,24 +1,55 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+  <div id="app w-full">
+    <div class="hidden md:block lg:block w-full">
+      <div class="md:block mt-4 font-bold">
+        harus dalam ukuran layar mobile (<576px)
+      </div>
     </div>
-  </header>
+    <div
+        class="sm:block md:hidden lg:hidden flex min-h-screen flex-col justify-center"
+      >
+      <RouterView />
+    </div>
+  </div>
 
-  <RouterView />
 </template>
+
+<script setup>
+import { ref, reactive, watch, computed, onMounted, onUpdated} from 'vue';
+import { RouterLink, RouterView } from 'vue-router'
+
+let windowWidth = ref(0);
+let viewMobile = ref(true);
+
+watch(windowWidth, (newValue, oldValue)=>{
+  if (newValue >= 576) {
+        return viewMobile.value = false
+      } else {
+        return viewMobile.value = true
+      }
+})
+
+onMounted(()=>{
+  onResize
+})
+
+onUpdated(()=>{
+  window.addEventListener('resize', onResize)
+})
+
+function onResize() {
+      windowWidth.value = window.innerWidth
+      if (windowWidth.value >= 576) {
+        return viewMobile.value = false
+      } else {
+        return viewMobile.value = true
+      }
+}
+
+
+
+</script>
 
 <style scoped>
 header {

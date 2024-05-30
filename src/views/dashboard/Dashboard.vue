@@ -9,6 +9,31 @@
 
 <script setup>
 import { ref, reactive, watch, computed, onMounted, onBeforeMount } from 'vue';
+import {useDashboardStore} from '../../stores/dashboard';
+
+const dashboardStore = useDashboardStore();
+const getUser = reactive(dashboardStore.user)
+const getNews = reactive(dashboardStore.news)
+const getPersonOnline = reactive(dashboardStore.personOnline)
+
+// const getNews = computed(()=>{
+//     return dashboardStore.news
+// })
+// 
+// 
+// const getPersonOnline = computed(()=>{
+//     return dashboardStore.personOnline
+// })
+
+onMounted(()=>{
+    console.log('get User = ');
+    console.log(getUser);
+    console.log('getNews = ');
+    console.log(getNews);
+    console.log('getPersonOnlin = ');
+    console.log(getPersonOnline.data);
+})
+
 
 </script>
 

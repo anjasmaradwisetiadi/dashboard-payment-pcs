@@ -1,10 +1,11 @@
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
+import {notificationData} from '../assets/dataDummy/notificationData'
 
-export const useCounterStore = defineStore('notification', {
+export const useNotificationStore = defineStore('notification', {
   state : () =>{
     return {
-      count: 0,
+      notification: notificationData
     }
   },
 

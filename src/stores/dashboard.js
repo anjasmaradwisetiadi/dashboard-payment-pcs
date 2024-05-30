@@ -1,10 +1,13 @@
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
+import {dataUser, dataCarousel, personOnline} from '../assets/dataDummy/dashboardData'
 
-export const useCounterStore = defineStore('dashboard', {
+export const useDashboardStore = defineStore('dashboard', {
   state : () =>{
     return {
-      count: 0,
+      user: dataUser,
+      news: dataCarousel,
+      personOnline: personOnline
     }
   },
 
