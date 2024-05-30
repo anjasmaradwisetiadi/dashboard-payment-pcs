@@ -7,8 +7,9 @@
       </div>
     </div>
     <div
-        class="sm:block md:hidden lg:hidden flex min-h-screen flex-col justify-center"
-      >
+      class="sm:block md:hidden lg:hidden flex flex-col justify-center"
+    >
+      <Navbar></Navbar>
       <RouterView />
     </div>
   </div>
@@ -18,6 +19,7 @@
 <script setup>
 import { ref, reactive, watch, computed, onMounted, onUpdated} from 'vue';
 import { RouterLink, RouterView } from 'vue-router'
+import Navbar from '../src/components/Navbar.vue'
 
 let windowWidth = ref(0);
 let viewMobile = ref(true);
