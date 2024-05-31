@@ -3,6 +3,7 @@
         <main class="mt-12 relative flex-grow">
             <Profile></Profile>
             <UserStatus></UserStatus>
+            <!-- <CarouselNews></CarouselNews> -->
         </main>
         <NavbarBottom></NavbarBottom>
     </div>
@@ -14,6 +15,7 @@ import NavbarBottom from '../../components/NavbarBottom.vue'
 import Profile from './Profile.vue'
 import UserStatus from './UserStatus.vue';
 import {useDashboardStore} from '../../stores/dashboard';
+import CarouselNews from './CarouselNews.vue';
 
 
 const dashboardStore = useDashboardStore();

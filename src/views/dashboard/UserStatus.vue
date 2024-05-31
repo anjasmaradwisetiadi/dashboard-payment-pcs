@@ -6,11 +6,11 @@
                     Online
                 </div>
             </div>
-            <div class="relative flex-grow flex flex-col shadow-lg rounded-lg py-2 px-2 border mt-3">
+            <div class="relative flex flex-col shadow-lg rounded-lg py-2 px-2 border mt-3">
                 <!-- ********** it show when online user more than 10 user-->
                 <div 
-                    v-if="getPersonOnline?.length >= 10"
-                    class="relative flex justify-center z-10 min-h-20 pl-4">
+                    v-if="getPersonOnline?.length > 10 "
+                    class="relative flex justify-center z-10 min-h-20 pl-4 mt-3">
                     <div
                         v-for="(data, index) in getPersonOnline"
                         :key="index" 
@@ -39,7 +39,7 @@
                 <!-- ********** it show when online user less than 9 user-->
                 <div
                     v-if="getPersonOnline?.length < 10" 
-                    class="relative flex justify-center z-10 min-h-20">
+                    class="relative flex justify-center z-10 min-h-20 mt-2">
                     <div
                         v-for="(data, index) in getPersonOnline" 
                         :key="index"
@@ -79,8 +79,26 @@ const dashboardStore = useDashboardStore()
 const getPersonOnline = computed(()=>{
     return dashboardStore.getterPersonOnline
 })
+watch(getPersonOnline,(newValue, oldValue)=>{
+    console.log("newValue getPersonOnline =")
+    console.log(newValue)
+})
+const getterLoading = computed(()=>{
+    console.log("dashboardStore.getterLoading")
+    console.log(dashboardStore.getterLoading);
+    return dashboardStore.getterLoading;
+})
+
+onMounted(()=>{
+    getterLoading
+})
+
+function renderClass(index){
+    return `absolute flex flex-col leading-4 text-center z-${index+1} left-[calc(${index}*2rem)]`
+}
 </script>
 
+<style lang="css" scoped src="../../css/main.css"></style>
 <style scoped>
 
 </style>

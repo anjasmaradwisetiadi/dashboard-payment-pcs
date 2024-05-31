@@ -7,7 +7,8 @@ export const useDashboardStore = defineStore('dashboard', {
     return {
       user: dataUser,
       news: dataCarousel,
-      personOnline: personOnline
+      personOnline: personOnline,
+      loading: true,
     }
   },
 
@@ -21,5 +22,11 @@ export const useDashboardStore = defineStore('dashboard', {
       const data = state.personOnline.data?.length >= 10 ? state.personOnline.data.slice(0,11): state.personOnline.data
       return data
     },
+    getterLoading(state){
+      const data = setTimeout(() => {
+          state.loading = false
+      }, 500);
+      return data
+    }
   }
 })
