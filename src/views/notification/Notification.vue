@@ -11,9 +11,9 @@
                     <div
                         class="flex">
                         <div class="w-3/12 flex relative">
-                            <div class="bg-gradient-to-r from-red-primary to-red-secondary relative flex justify-center rounded-lg w-24 max-h-14 mb-10 shadow-md z-1">
+                            <div class="flex items-center bg-gradient-to-r from-red-primary to-red-secondary relative flex justify-center rounded-lg w-24 max-h-14 mb-10 shadow-md z-1 p-4">
                                 <img 
-                                    class="w-14 h-14 rounded-lg"
+                                    class="w-10 h-10 rounded-lg"
                                     :src="imageSrc(data.image)" alt="user_1"
                                 >
                             </div>

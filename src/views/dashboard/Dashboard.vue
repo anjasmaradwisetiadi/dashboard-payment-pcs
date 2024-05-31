@@ -1,6 +1,6 @@
 <template>
     <div id="Dashboard" class="flex flex-col min-h-screen">
-        <main class="mt-12 relative flex-grow min-h-[96vh-12rem] overflow-y-auto z-1 pb-28">
+        <main class="mt-12 relative flex-grow min-h-[96vh-12rem] overflow-y-auto overflow-x-hidden z-1 pb-28">
             <Profile></Profile>
             <CarouselNews></CarouselNews>
             <UserStatus></UserStatus>
