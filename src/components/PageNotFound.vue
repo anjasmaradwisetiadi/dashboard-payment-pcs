@@ -2,9 +2,9 @@
     <div id="PageNotFound">
         <div class="page-not-found">
             <div class="text-center">
-                <h3>Page Not Found</h3>
+                <h3 class="text-lg font-semibold">Page Not Found</h3>
                 <div class="col d-flex justify-content-center">
-                    <button type="button" class="button-style-secondary" @click="backRoute()">Kembali</button>
+                    <button type="button" class="px-4 py-2 text-white mt-2 rounded-md bg-gradient-to-r from-red-primary to-red-secondary" @click="backRoute()">Kembali</button>
                 </div>
             </div>
         </div>
@@ -20,7 +20,7 @@ onMounted(()=>{
 })
 
 function backRoute(){
-    router.push(`/tier-list`);
+    router.push(`/`);
 }
 </script>
 <style scoped>

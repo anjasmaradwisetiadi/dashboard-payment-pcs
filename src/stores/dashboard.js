@@ -1,4 +1,3 @@
-import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 import {dataUser, dataCarousel, personOnline} from '../assets/dataDummy/dashboardData'
 
@@ -8,12 +7,17 @@ export const useDashboardStore = defineStore('dashboard', {
       user: dataUser,
       news: dataCarousel,
       personOnline: personOnline,
-      loading: true,
+      loading: false,
     }
   },
 
   actions:{
-
+    simulateLoading(){
+      this.loading = true
+      setTimeout(() => {
+          this.loading = false
+      }, 700);
+    }
   },
 
   getters: {
@@ -22,11 +26,5 @@ export const useDashboardStore = defineStore('dashboard', {
       const data = state.personOnline.data?.length >= 10 ? state.personOnline.data.slice(0,11): state.personOnline.data
       return data
     },
-    getterLoading(state){
-      const data = setTimeout(() => {
-          state.loading = false
-      }, 500);
-      return data
-    }
   }
 })

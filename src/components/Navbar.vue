@@ -28,8 +28,9 @@
 </template>
 
 <script setup>
-import { ref, reactive, watch, computed, onMounted, onBeforeMount, onUpdated } from 'vue';
+import { ref, watch, onMounted, onBeforeMount } from 'vue';
 import { useRouter } from 'vue-router';
+
 const router = useRouter();
 
 const nameRoutePath = ref('');

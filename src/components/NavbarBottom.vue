@@ -1,5 +1,5 @@
 <template>
-    <div id="NavbarBottom">
+    <div id="NavbarBottom" class="fixed bottom-0 z-10">
         <footer class="flex flex-row justify-start w-screen title text-center pb-3 pt-2 border-b-2 px-3 border-t z-10 bg-white shadow-top-nabvar">
             <div class="w-2/12" >
                 <div class="text-center leading-3">
@@ -70,13 +70,6 @@
 </template>
 
 <script setup>
-import { ref, reactive, watch, computed, onMounted, onBeforeMount } from 'vue';
-import {useDashboardStore} from '../stores/dashboard';
-
-const dashboardStore = useDashboardStore();
-const getUser = reactive(dashboardStore.user)
-const getNews = reactive(dashboardStore.news)
-const getPersonOnline = reactive(dashboardStore.personOnline)
 
 </script>
 
@@ -91,7 +84,7 @@ const getPersonOnline = reactive(dashboardStore.personOnline)
     box-shadow: 0px 10px 10px 10px rgb(0 0 0 / 0.18);
 }
 .shadow-top-checkout-icon{
-    box-shadow: 0px -3px 6px 2px rgb(0 0 0 / 0.22);
+    box-shadow: 0px -3px 6px 2px rgb(0 0 0 / 0.20);
 }
 .custom-style-checkout-icon{
     top: -40px;

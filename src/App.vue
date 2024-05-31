@@ -1,9 +1,9 @@
 
 <template>
   <div id="app w-full">
-    <div class="hidden md:block lg:block w-full">
-      <div class="md:block mt-4 font-bold">
-        harus dalam ukuran layar mobile (<576px)
+    <div class="hidden md:block lg:block w-full text-center">
+      <div class="md:block mt-6 font-bold">
+        Harus dalam ukuran layar mobile (<576px)
       </div>
     </div>
     <div
