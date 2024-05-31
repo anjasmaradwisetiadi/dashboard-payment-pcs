@@ -19,7 +19,7 @@
                     >   
                         <template v-if="(index+1) <= 9">
                             <div class="">
-                                <img class="w-10 h-10 rounded-full border-2 border-white" :src="collectUrl.baseUrl + data.image" alt="user_profile">
+                                <img class="w-10 h-10 rounded-full border-2 border-white" :src="imageSrc(data.image)" alt="user_profile">
                             </div>
                             <div class="text-[0.6rem] font-semibold leading-3">
                                 {{ data.name }}
@@ -45,7 +45,7 @@
                         :key="index"
                         class="relative flex flex-col leading-4 text-center ">
                         <div class="">
-                            <img class="w-12 h-12 rounded-full border-2 border-white bg-center bg-cover" :src="collectUrl.baseUrl + data.image" alt="user_profile">
+                            <img class="w-12 h-12 rounded-full border-2 border-white bg-center bg-cover" :src="imageSrc(data.image)" alt="user_profile">
                         </div>
                         <div class="text-xs font-semibold">
                             {{ data.name }}
@@ -81,8 +81,13 @@ const getPersonOnline = computed(()=>{
 })
 
 onMounted(()=>{
-    getterLoading
+
 })
+
+// imageCallUrl use vite
+function imageSrc(selectedItem) {
+    return new URL(`${selectedItem}`, import.meta.url).href;
+}
 
 
 </script>

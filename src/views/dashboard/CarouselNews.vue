@@ -7,7 +7,7 @@
                         <div class="flex flex-row">
                             <div class="flex w-1/2 items-center">
                                 <div class="text-sm">
-                                    <img class="w-8 h-8 rounded-full" :src="collectUrl.baseUrl +  item.image" alt="user_profile">
+                                    <img class="w-8 h-8 rounded-full" :src="imageSrc(item.image)" alt="user_profile">
                                 </div>
                                 <div class="text-sm font-bold text-red-primary ml-2">
                                     {{item.name}}
@@ -97,6 +97,10 @@
         getTruncateWord(data, length){
             return utilize.truncateWord(data, length)
         },
+        // imageCallUrl use vite
+        imageSrc(selectedItem) {
+            return new URL(`${selectedItem}`, import.meta.url).href;
+        }
     }
   })
 </script>

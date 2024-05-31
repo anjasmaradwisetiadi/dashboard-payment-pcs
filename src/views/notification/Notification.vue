@@ -14,7 +14,7 @@
                             <div class="bg-gradient-to-r from-red-primary to-red-secondary relative flex justify-center rounded-lg w-24 max-h-14 mb-10 shadow-md z-1">
                                 <img 
                                     class="w-14 h-14 rounded-lg"
-                                    :src="collectUrl.baseUrl + data.image" alt="user_1"
+                                    :src="imageSrc(data.image)" alt="user_1"
                                 >
                             </div>
                             <span
@@ -83,6 +83,10 @@ const getNotification = reactive(notificationStore.notification)
 onMounted(()=>{
     dashboardStore.simulateLoading()
 })
+
+function imageSrc(selectedItem) {
+    return new URL(`${selectedItem}`, import.meta.url).href;
+}
 </script>
 
 <style scoped>
