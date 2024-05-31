@@ -1,6 +1,7 @@
 export const dataUser = {
     data: {
         name: 'Anjasmara',
+        image: 'src/assets/image/user_1.png',
         position: 'Frontend',
         member_since: '1611979250',
         location: 'Kantor sahid',
@@ -44,25 +45,25 @@ export const dataCarousel = {
 
 export const personOnline = {
     data: [
-        { name: "Alice Johnson", status: "Active", position: "Software Engineer", status_work: 'wfh' },
-        { name: "Bob Smith", status: "Inactive", position: "Product Manager", status_work: 'wfh' },
-        { name: "Charlie Brown", status: "Active", position: "Designer", status_work: 'wfh' },
-        { name: "Diana Prince", status: "Active", position: "Frontend Developer", status_work: 'wfh' },
-        { name: "Edward Kim", status: "Inactive", position: "Backend Developer", status_work: 'wfh' },
-        { name: "Fiona Davis", status: "Active", position: "QA Engineer", status_work: 'wfh' },
-        { name: "George Miller", status: "Inactive", position: "DevOps Engineer", status_work: 'wfh' },
-        { name: "Helen Clark", status: "Active", position: "Project Manager", status_work: 'wfh' },
-        { name: "Ian Wright", status: "Active", position: "Business Analyst", status_work: 'wfh' },
-        { name: "Jasmine Lee", status: "Inactive", position: "UX Researcher" },
-        { name: "Kyle Adams", status: "Active", position: "Data Scientist", status_work: 'wfh' },
-        { name: "Laura Moore", status: "Inactive", position: "Marketing Specialist", status_work: 'wfh' },
-        { name: "Michael Scott", status: "Active", position: "Sales Manager", status_work: 'wfh' },
-        { name: "Natalie Portman", status: "Inactive", position: "HR Specialist", status_work: 'wfh' },
-        { name: "Oliver Stone", status: "Active", position: "Financial Analyst", status_work: 'wfh' },
-        { name: "Paula Abdul", status: "Inactive", position: "Customer Support", status_work: 'wfh' },
-        { name: "Quentin Tarantino", status: "Active", position: "Content Writer", status_work: 'wfh' },
-        { name: "Rachel Green", status: "Inactive", position: "Office Manager", status_work: 'wfh' },
-        { name: "Steve Rogers", status: "Active", position: "Operations Manager", status_work: 'wfh' },
-        { name: "Tony Stark", status: "Inactive", position: "Chief Technology Officer", status_work: 'wfh' }
+        { name: "Alice", status: "Active", position: "Software Engineer", status_work: 'wfh', image:'src/assets/image/user_1.png' },
+        { name: "Bob", status: "Active", position: "Product Manager", status_work: 'wfh', image:'src/assets/image/user_2.png' },
+        { name: "Charlie", status: "Active", position: "Designer", status_work: 'wfh', image:'src/assets/image/user_3.png' },
+        { name: "Diana", status: "Active", position: "Frontend Developer", status_work: 'wfh', image:'src/assets/image/user_4.png' },
+        { name: "Edward", status: "Active", position: "Backend Developer", status_work: 'wfh', image:'src/assets/image/user_5.png' },
+        { name: "Fiona", status: "Active", position: "QA Engineer", status_work: 'wfh', image:'src/assets/image/user_1.png' },
+        { name: "George", status: "Active", position: "DevOps Engineer", status_work: 'wfh', image:'src/assets/image/user_2.png' },
+        { name: "Helen", status: "Active", position: "Project Manager", status_work: 'wfh', image:'src/assets/image/user_3.png' },
+        { name: "Ian", status: "Active", position: "Business Analyst", status_work: 'wfh', image:'src/assets/image/user_4.png' },
+        { name: "Jasmin", status: "Active", position: "UX Researcher", status_work: 'wfh', image:'src/assets/image/user_5.png'  },
+        { name: "Kyle", status: "Active", position: "Data Scientist", status_work: 'wfh', image:'src/assets/image/user_1.png' },
+        { name: "Laura", status: "Active", position: "Marketing Specialist", status_work: 'wfh', image:'src/assets/image/user_2.png' },
+        { name: "Michael", status: "Active", position: "Sales Manager", status_work: 'wfh', image:'src/assets/image/user_3.png' },
+        { name: "Natalie", status: "Active", position: "HR Specialist", status_work: 'wfh', image:'src/assets/image/user_4.png' },
+        { name: "Oliver ", status: "Active", position: "Financial Analyst", status_work: 'wfh', image:'src/assets/image/user_5.png' },
+        { name: "Paula ", status: "Active", position: "Customer Support", status_work: 'wfh', image:'src/assets/image/user_1.png' },
+        { name: "Quentin ", status: "Active", position: "Content Writer", status_work: 'wfh', image:'src/assets/image/user_2.png' },
+        { name: "Rachel ", status: "Active", position: "Office Manager", status_work: 'wfh', image:'src/assets/image/user_1.png' },
+        { name: "Steve ", status: "Active", position: "Operations Manager", status_work: 'wfh', image:'src/assets/image/user_3.png' },
+        { name: "Tony ", status: "Active", position: "Chief Technology Officer", status_work: 'wfh', image:'src/assets/image/user_5.png' }
     ]
 }

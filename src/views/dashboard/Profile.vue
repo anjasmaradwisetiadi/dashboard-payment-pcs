@@ -5,7 +5,7 @@
             <div class="px-3 py-5 text-sm text-white bg-gradient-to-r from-red-primary to-red-secondary rounded-lg shadow-md">
                 <div class="flex flex-row">
                     <div class="w-2/12">
-                        <img class="w-14 h-14 rounded-full" src="../../assets/image/user_1.png" alt="user_profile">
+                        <img class="w-14 h-14 rounded-full" :src="collectUrl.baseUrl +  getDashboard.image" alt="user_profile">
                     </div>
                     <div class="w-5/12 pl-2 leading-4">
                         <div class="text-base font-semibold">
