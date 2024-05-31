@@ -25,8 +25,21 @@
                     </div>
                 </div>
             </div>
-            <div class="w-4/12">
-                 Checkout
+            <div class=" relative flex-row w-4/12">
+                <div class="flex relative justify-center z-20">
+                    <div class="custom-style-checkout-icon absolute w-14 h-14 bg-red-primary flex justify-center items-center rounded-full">
+                        <span class="material-icons text-white" style="font-size: 24px;">
+                            exit_to_app
+                        </span>
+                    </div>
+                </div>
+                <div class="w-6 h-6">
+
+                </div>
+                <div class="relative text-xs text-red-primary font-semibold">
+                    Checkout
+                </div>
+                 
             </div>
             <div class="w-2/12">
                 <div class="text-center leading-3">
@@ -76,5 +89,8 @@ const getPersonOnline = reactive(dashboardStore.personOnline)
 }
 .shadow-top-nabvar{
     box-shadow: 0px 10px 10px 10px rgb(0 0 0 / 0.18);
+}
+.custom-style-checkout-icon{
+    top: -40px;
 }
 </style>
