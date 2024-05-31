@@ -14,30 +14,40 @@ export const dataUser = {
 
 export const dataCarousel = {
     data: [
-        {
-            user: "Alice",
-            date: "2024-05-28",
-            description: "Completed the project documentation."
+          {
+            name: "Alice",
+            day: 'Senin',
+            date: "30 Mei 2022",
+            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer viewed Lorem Ipsum is simply dummy text of the printing and",
+            image:'src/assets/image/user_1.png'
           },
           {
-            user: "Bob",
-            date: "2024-05-27",
-            description: "Fixed bugs in the authentication module."
+            name: "Bob",
+            day: 'Senin',
+            date: "30 Mei 2022",
+            description: "Fixed bugs in the authentication module.",
+            image:'src/assets/image/user_2.png'
           },
           {
-            user: "Charlie",
-            date: "2024-05-26",
-            description: "Reviewed pull requests and merged into main branch."
+            name: "Charlie",
+            day: 'Senin',
+            date: "30 Mei 2022",
+            description: "Reviewed pull requests and merged into main branch.",
+            image:'src/assets/image/user_3.png'
           },
           {
-            user: "Edward",
-            date: "2024-05-24",
-            description: "Set up the CI/CD pipeline for automated testing."
+            name: "Edward",
+            day: 'Senin',
+            date: "30 Mei 2022",
+            description: "Set up the CI/CD pipeline for automated testing.",
+            image:'src/assets/image/user_4.png'
           },
           {
-            user: "Fiona",
-            date: "2024-05-23",
-            description: "Conducted user testing and gathered feedback."
+            name: "Fiona",
+            day: 'Senin',
+            date: "30 Mei 2022",
+            description: "Conducted user testing and gathered feedback.",
+            image:'src/assets/image/user_5.png'
           },
     ]
     

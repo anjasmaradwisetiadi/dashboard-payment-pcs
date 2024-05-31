@@ -2,8 +2,8 @@
     <div id="Dashboard" class="flex flex-col min-h-screen">
         <main class="mt-12 relative flex-grow">
             <Profile></Profile>
+            <CarouselNews></CarouselNews>
             <UserStatus></UserStatus>
-            <!-- <CarouselNews></CarouselNews> -->
         </main>
         <NavbarBottom></NavbarBottom>
     </div>
