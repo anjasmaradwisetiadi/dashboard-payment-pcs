@@ -6,10 +6,12 @@ export default {
     extend: {
       colors: {
         'blue-primary' : '#014D81',
-        'red-primary': '#f83723',
+        'red-primary': '#f02722',
+        'red-secondary': '#c10e65',
         'green-primary': '#16A34A',
-        'green-secondary': '#a7f3d0'
+        'green-secondary': '#a7f3d0',
       },
+
     },
   },
   plugins: [],

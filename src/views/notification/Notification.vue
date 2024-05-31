@@ -6,11 +6,11 @@
             v-for="(data, index) in getNotification.data"
             :class="data.status === 'Unread'? 'bg-blue-200':''"
             :key="index">
-            <div class="px-4 p-2">
+            <div class="px-3 p-2">
                 <div
                     class="flex">
                     <div class="w-3/12 flex relative">
-                        <div class="bg-red-primary relative flex justify-center rounded-lg w-24 max-h-14 mb-10 shadow-md">
+                        <div class="bg-gradient-to-r from-red-primary to-red-secondary relative flex justify-center rounded-lg w-24 max-h-14 mb-10 shadow-md">
                             <img 
                                 class="w-14 h-14 rounded-lg"
                                 :src="collectUrl.baseUrl + data.image" alt="user_1"
