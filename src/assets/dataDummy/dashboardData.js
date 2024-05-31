@@ -1,11 +1,13 @@
 export const dataUser = {
     data: {
         name: 'Anjasmara',
-        posisi: 'Frontend',
-        member_since: '01 juni 2021',
+        position: 'Frontend',
+        member_since: '1611979250',
         location: 'Kantor sahid',
-        check_in: '08:03',
-        working_hours: '03:00:00',
+        check_in: '1717030800',
+        start_working: '1717030800',
+        current_working: '1717041650',
+        check_out: '',
     }
 }
 

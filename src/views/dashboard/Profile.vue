@@ -8,19 +8,19 @@
                         <img class="w-14 h-14 rounded-full" src="../../assets/image/user_1.png" alt="user_profile">
                     </div>
                     <div class="w-5/12 pl-2 leading-4">
-                        <div class="text-lg font-semibold">
-                            Tabay
+                        <div class="text-base font-semibold">
+                            {{ getDashboard.name }}
                         </div>
                         <div class="text-xs font-extralight">
-                            Ui/Ux Designer
+                            {{ getDashboard.position }}
                         </div>
                     </div>
                     <div class="w-5/12 text-right leading-4">
                         <div class="text-xs font-extralight">
-                            Member price
+                            Member Since
                         </div>
-                        <div class="text-lg font-semibold">
-                            01 juni 2021
+                        <div class="text-base font-semibold">
+                            {{ utilize.convertTimeDate(getDashboard.member_since) }}
                         </div>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
                             Location
                         </div>
                         <div class="font-semibold">
-                            Kantor Sahid
+                            {{ getDashboard.location }}
                         </div>
                     </div>
                     <div class="w-1/2 text-right">
@@ -54,7 +54,7 @@
                             </span>
                         </div>
                         <div class="font-bold">
-                            08:30
+                            {{ utilize.convertTimeHours(getDashboard.check_in) }}
                         </div>
                         <div class="text-xs font-extralight">
                             Check in
@@ -67,7 +67,7 @@
                             </span>
                         </div>
                         <div class="font-bold text-base text-red-primary">
-                            08:30:00
+                            {{ utilize.convertTimeBetween(getDashboard.start_working, getDashboard.current_working) }}
                         </div>
                         <div class="text-xs font-extralight">
                             Working Hours
@@ -80,7 +80,7 @@
                             </span>
                         </div>
                         <div class="font-bold">
-                            --:--
+                            {{ utilize.convertTimeHours(getDashboard.check_out) }}
                         </div>
                         <div class="text-xs font-extralight">
                             Check Out
@@ -94,6 +94,13 @@
 
 <script setup>
 import { ref, reactive, watch, computed, onMounted, onBeforeMount } from 'vue';
+import {useDashboardStore} from '../../stores/dashboard';
+import {utilize} from '../../utilize/index'
+import {collectUrl} from '../../utilize/collectUrl'
+
+const dashboardStore = useDashboardStore();
+
+const getDashboard = reactive(dashboardStore.user.data);
 
 </script>
 
