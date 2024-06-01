@@ -9,7 +9,7 @@ export const utilize = {
     },
 
     convertTimeDate(data){
-        if(dayjs(data, 'HH:mm').isValid()){
+        if(dayjs(data).isValid()){
             const date = data.toString().length === 10 ? data * 1000 : data;
             return dayjs(date).format('DD MMMM YYYY');
         }
@@ -17,7 +17,7 @@ export const utilize = {
     },
 
     convertTimeHours(data){
-        if(dayjs(data, 'HH:mm').isValid()){
+        if(dayjs(data).isValid()){
             const date = data.toString().length === 10 ? data * 1000 : data;
             return dayjs(date).format('HH:mm');
         }

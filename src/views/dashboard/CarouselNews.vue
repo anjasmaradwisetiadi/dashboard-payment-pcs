@@ -3,7 +3,7 @@
         <Carousel :items-to-show="1.15" :autoplay="2000" :wrap-around="true">
             <Slide v-for="(item, index) in getNews" :key="index">
                 <div class="carousel__item">
-                    <div class="flex flex-col w-72 p-2">
+                    <div class="flex flex-col w-80 p-2">
                         <div class="flex flex-row">
                             <div class="flex w-1/2 items-center">
                                 <div class="text-sm">
