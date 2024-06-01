@@ -48,7 +48,7 @@
                             </div>
                         </div>
                         <div class="w-3/12 text-center text-gray-500 text-sm text-right pr-1">
-                            {{ data.date }}
+                            {{ utilize.convertDiffTime(epochDateStart ,data.date) }}
                         </div>
                     </div>
                 </div>
@@ -74,19 +74,22 @@ import {useDashboardStore} from '../../stores/dashboard';
 import {utilize} from '../../utilize/index'
 import {collectUrl} from '../../utilize/collectUrl'
 import Loading from '../../components/Loading.vue'
+import dayjs from "dayjs";
 
 const notificationStore = useNotificationStore();
 const dashboardStore = useDashboardStore();
-const getNotification = reactive(notificationStore.notification)
-
+const getNotification = reactive(notificationStore.notification);
+// tanggal 29-05-2024
+const epochDateStart = '1716940800'
 
 onMounted(()=>{
-    dashboardStore.simulateLoading()
+    dashboardStore.simulateLoading();
 })
 
 function imageSrc(selectedItem) {
     return new URL(`${selectedItem}`, import.meta.url).href;
 }
+
 </script>
 
 <style scoped>

@@ -3,7 +3,7 @@ export const notificationData={
           {
             name: "Reimborsments",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-            date: "Yesterday",
+            date: "1717063200",
             status: "Unread",
             image: "../../assets/image/coin.png",
             thumbnail: "check"
@@ -11,7 +11,7 @@ export const notificationData={
           {
             name: "Reimborsments",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer viewed",
-            date: "Today",
+            date: "1716976800",
             status: "Read",
             image: "../../assets/image/coin.png",
             thumbnail: "check"
@@ -19,7 +19,7 @@ export const notificationData={
           {
             name: "Reimborsments",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer new follower",
-            date: "2024-05-26",
+            date: "1716631200",
             status: "Unread",
             image: "../../assets/image/coin.png",
             thumbnail: "check"
@@ -27,7 +27,7 @@ export const notificationData={
           {
             name: "Sickness",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
-            date: "2024-05-25",
+            date: "1716631200",
             status: "Unread",
             image: "../../assets/image/pill.png",
             thumbnail: "close"
@@ -35,7 +35,7 @@ export const notificationData={
           {
             name: "Sickness",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
-            date: "2024-05-24",
+            date: "1717063200",
             status: "Read",
             image: "../../assets/image/pill.png",
             thumbnail: "close"
@@ -43,7 +43,7 @@ export const notificationData={
           {
             name: "Sickness",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
-            date: "2024-05-23",
+            date: "1716631200",
             status: "Read",
             image: "../../assets/image/pill.png",
             thumbnail: "close"
@@ -51,7 +51,7 @@ export const notificationData={
           {
             name: "Sicknessr",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer liked",
-            date: "2024-05-22",
+            date: "1716976800",
             status: "Unread",
             image: "../../assets/image/pill.png",
             thumbnail: "close"
@@ -59,7 +59,7 @@ export const notificationData={
           {
             name: "Sickness",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
-            date: "2024-05-21",
+            date: "1716631200",
             status: "Unread",
             image: "../../assets/image/pill.png",
             thumbnail: "check"
@@ -67,7 +67,7 @@ export const notificationData={
           {
             name: "Sickness",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer in a comment",
-            date: "2024-05-20",
+            date: "1716631200",
             status: "Read",
             image: "../../assets/image/pill.png",
             thumbnail: "close"
@@ -75,7 +75,7 @@ export const notificationData={
           {
             name: "Overtime",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
-            date: "2024-05-19",
+            date: "1716631200",
             status: "Unread",
             image: "../../assets/image/pill.png",
             thumbnail: "check"
@@ -83,7 +83,7 @@ export const notificationData={
           {
             name: "Overtime",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer unknown device",
-            date: "2024-05-18",
+            date: "1716631200",
             status: "Read",
             image: "../../assets/image/pill.png",
             thumbnail: "thumbnail"
@@ -91,7 +91,7 @@ export const notificationData={
           {
             name: "Overtime",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer suspicious activity",
-            date: "2024-05-17",
+            date: "1716631200",
             status: "Unread",
             image: "../../assets/image/pill.png",
             thumbnail: "next"
@@ -99,7 +99,7 @@ export const notificationData={
           {
             name: "Overtime",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer available",
-            date: "2024-05-16",
+            date: "1716631200",
             status: "Read",
             image: "../../assets/image/pill.png",
             thumbnail: "next"
@@ -107,7 +107,7 @@ export const notificationData={
           {
             name: "Overtime",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
-            date: "2024-05-15",
+            date: "1716631200",
             status: "Unread",
             image: "../../assets/image/waker.png",
             thumbnail: "next"
@@ -115,7 +115,7 @@ export const notificationData={
           {
             name: "Overtime",
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer on your photo",
-            date: "2024-05-14",
+            date: "1716631200",
             status: "Read",
             image: "../../assets/image/waker.png",
             thumbnail: "check"
