@@ -1,5 +1,5 @@
 <template>
-    <div id="User Status">
+    <div id="User Status" v-if="!dashboardStore.loading">
         <div class="relative flex flex-col px-3">
             <div>
                 <div class="text-base font-bold">

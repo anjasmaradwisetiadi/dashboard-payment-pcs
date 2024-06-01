@@ -1,5 +1,5 @@
 <template>
-    <div id="Profile">
+    <div id="Profile" v-if="!dashboardStore.loading">
         <div class="flex flex-col px-3">
             <div class="py-2">Hi, Good Morning ?</div>
             <div class="px-3 py-5 text-sm text-white bg-gradient-to-r from-red-primary to-red-secondary rounded-lg shadow-md">
@@ -99,7 +99,6 @@ import {utilize} from '../../utilize/index'
 import {collectUrl} from '../../utilize/collectUrl'
 
 const dashboardStore = useDashboardStore();
-
 const getDashboard = reactive(dashboardStore.user.data);
 
 // imageCallUrl use vite

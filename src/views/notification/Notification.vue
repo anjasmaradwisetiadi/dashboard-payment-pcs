@@ -1,7 +1,7 @@
 <template>
-    <div id="Notification">
+    <div id="Notification" >
         <div class="mt-14">
-            <template v-if="getNotification.data?.length">
+            <template v-if="getNotification.data?.length && !dashboardStore.loading">
                 <div 
                 class="cursor-pointer "
                 v-for="(data, index) in getNotification.data"

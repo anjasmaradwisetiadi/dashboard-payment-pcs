@@ -1,5 +1,5 @@
 <template>
-    <div id="CarouselNews">
+    <div id="CarouselNews" v-if="!getLoading">
         <Carousel :items-to-show="1.15" :autoplay="2000" :wrap-around="true">
             <Slide v-for="(item, index) in getNews" :key="index">
                 <div class="carousel__item">
@@ -89,6 +89,9 @@
             getNews(store){
                 return store.news.data;
             },
+            getLoading(store){
+                return store.loading;
+            }
         },
         )
     },
