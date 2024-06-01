@@ -29,8 +29,8 @@
                                 </div>
                             </template> 
                             <template v-if="(index+1) === 10">
-                                <div class="w-12 h-12 text-xs rounded-full border-2 border-white bg-gradient-to-r from-red-primary to-red-secondary text-xs flex item center text-white">
-                                        10 more
+                                <div class="w-12 h-12 p-1.5 text-xs flex flex-wrap justify-center text-[0.6rem] rounded-full border-2 border-white bg-gradient-to-r from-red-primary to-red-secondary text-xs flex item center text-white">
+                                        10<br> more
                                 </div>
                                 <div class="h-6 w-6">
 
