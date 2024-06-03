@@ -78,7 +78,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted, onUpdated,} from 'vue';
+import { ref, computed, onMounted, onUnmounted, onUpdated, watch,} from 'vue';
 import {useDashboardStore} from '../../stores/dashboard';
 import {utilize} from '../../utilize/index'
 import {collectUrl} from '../../utilize/collectUrl'
@@ -90,15 +90,22 @@ const getPersonOnline = computed(()=>{
 })
 
 onMounted(()=>{
+    //********** */ it need trigger use reload page always change responsive width screen device phone
     window.removeEventListener("resize", getBoundingClent());
 })
 
 onUpdated(()=>{
+    //********** */ it need trigger use reload page always change responsive width screen device phone
     window.removeEventListener("resize", getBoundingClent());
 })
 
 onUnmounted(()=>{
+    //********** */ it need trigger use reload page always change responsive width screen device phone
     window.addEventListener("resize", getBoundingClent());
+})
+
+watch(wrapCardBackground?.value?.getBoundingClientRect() ,()=>{
+    return getBoundingClent();
 })
 
 // imageCallUrl use vite
