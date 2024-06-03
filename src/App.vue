@@ -17,8 +17,7 @@
 </template>
 
 <script setup>
-import { ref, reactive, watch, computed, onMounted, onUpdated} from 'vue';
-import { RouterLink, RouterView } from 'vue-router'
+import { ref, reactive, watch, onMounted, onUpdated} from 'vue';
 import Navbar from '../src/components/Navbar.vue'
 
 let windowWidth = ref(0);
