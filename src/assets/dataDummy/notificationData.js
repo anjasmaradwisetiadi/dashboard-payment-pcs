@@ -5,7 +5,7 @@ export const notificationData={
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
             date: "1717063200",
             status: "Unread",
-            image: "../../assets/image/coin.png",
+            image: "https://master-duel-ruler.site/storage/post-image/photo-external/coin.png",
             thumbnail: "check"
           },
           {
@@ -13,7 +13,7 @@ export const notificationData={
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer viewed",
             date: "1716976800",
             status: "Read",
-            image: "../../assets/image/coin.png",
+            image: "https://master-duel-ruler.site/storage/post-image/photo-external/coin.png",
             thumbnail: "check"
           },
           {
@@ -21,7 +21,7 @@ export const notificationData={
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer new follower",
             date: "1716631200",
             status: "Unread",
-            image: "../../assets/image/coin.png",
+            image: "https://master-duel-ruler.site/storage/post-image/photo-external/coin.png",
             thumbnail: "check"
           },
           {
@@ -29,7 +29,7 @@ export const notificationData={
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
             date: "1716631200",
             status: "Unread",
-            image: "../../assets/image/pill.png",
+            image: "https://master-duel-ruler.site/storage/post-image/photo-external/pill.png",
             thumbnail: "close"
           },
           {
@@ -37,7 +37,7 @@ export const notificationData={
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
             date: "1717063200",
             status: "Read",
-            image: "../../assets/image/pill.png",
+            image: "https://master-duel-ruler.site/storage/post-image/photo-external/pill.png",
             thumbnail: "close"
           },
           {
@@ -45,7 +45,7 @@ export const notificationData={
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
             date: "1716631200",
             status: "Read",
-            image: "../../assets/image/pill.png",
+            image: "https://master-duel-ruler.site/storage/post-image/photo-external/pill.png",
             thumbnail: "close"
           },
           {
@@ -53,7 +53,7 @@ export const notificationData={
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer liked",
             date: "1716976800",
             status: "Unread",
-            image: "../../assets/image/pill.png",
+            image: "https://master-duel-ruler.site/storage/post-image/photo-external/pill.png",
             thumbnail: "close"
           },
           {
@@ -61,7 +61,7 @@ export const notificationData={
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
             date: "1716631200",
             status: "Unread",
-            image: "../../assets/image/pill.png",
+            image: "https://master-duel-ruler.site/storage/post-image/photo-external/pill.png",
             thumbnail: "check"
           },
           {
@@ -69,7 +69,7 @@ export const notificationData={
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer in a comment",
             date: "1716631200",
             status: "Read",
-            image: "../../assets/image/pill.png",
+            image: "https://master-duel-ruler.site/storage/post-image/photo-external/pill.png",
             thumbnail: "close"
           },
           {
@@ -77,7 +77,7 @@ export const notificationData={
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
             date: "1716631200",
             status: "Unread",
-            image: "../../assets/image/pill.png",
+            image: "https://master-duel-ruler.site/storage/post-image/photo-external/pill.png",
             thumbnail: "check"
           },
           {
@@ -85,7 +85,7 @@ export const notificationData={
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer unknown device",
             date: "1716631200",
             status: "Read",
-            image: "../../assets/image/pill.png",
+            image: "https://master-duel-ruler.site/storage/post-image/photo-external/pill.png",
             thumbnail: "thumbnail"
           },
           {
@@ -93,7 +93,7 @@ export const notificationData={
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer suspicious activity",
             date: "1716631200",
             status: "Unread",
-            image: "../../assets/image/pill.png",
+            image: "https://master-duel-ruler.site/storage/post-image/photo-external/pill.png",
             thumbnail: "next"
           },
           {
@@ -101,7 +101,7 @@ export const notificationData={
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer available",
             date: "1716631200",
             status: "Read",
-            image: "../../assets/image/pill.png",
+            image: "https://master-duel-ruler.site/storage/post-image/photo-external/pill.png",
             thumbnail: "next"
           },
           {
@@ -109,7 +109,7 @@ export const notificationData={
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
             date: "1716631200",
             status: "Unread",
-            image: "../../assets/image/waker.png",
+            image: "https://master-duel-ruler.site/storage/post-image/photo-external/clock.png",
             thumbnail: "next"
           },
           {
@@ -117,7 +117,7 @@ export const notificationData={
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer on your photo",
             date: "1716631200",
             status: "Read",
-            image: "../../assets/image/waker.png",
+            image: "https://master-duel-ruler.site/storage/post-image/photo-external/clock.png",
             thumbnail: "check"
           }
     ]
