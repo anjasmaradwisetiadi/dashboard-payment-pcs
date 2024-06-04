@@ -11,6 +11,9 @@
     >
       <Navbar></Navbar>
       <RouterView />
+      <template v-if="nameRoutePath !== 'notification'">
+        <NavbarBottom></NavbarBottom>
+      </template>
     </div>
   </div>
 
@@ -19,9 +22,14 @@
 <script setup>
 import { ref, reactive, watch, onMounted, onUpdated} from 'vue';
 import Navbar from '../src/components/Navbar.vue'
+import NavbarBottom from './components/NavbarBottom.vue'
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 
 let windowWidth = ref(0);
 let viewMobile = ref(true);
+const nameRoutePath = ref('');
 
 watch(windowWidth, (newValue, oldValue)=>{
   if (newValue >= 576) {
@@ -30,6 +38,8 @@ watch(windowWidth, (newValue, oldValue)=>{
         return viewMobile.value = true
       }
 })
+
+watch(() => router.currentRoute.value, fetchData, { immediate: true })
 
 onMounted(()=>{
   onResize
@@ -46,6 +56,10 @@ function onResize() {
       } else {
         return viewMobile.value = true
       }
+}
+
+async function fetchData(data) {
+    nameRoutePath.value = data.name;
 }
 
 

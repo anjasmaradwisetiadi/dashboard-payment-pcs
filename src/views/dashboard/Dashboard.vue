@@ -5,7 +5,7 @@
             <CarouselNews></CarouselNews>
             <UserStatus></UserStatus>
         </main>
-        <NavbarBottom></NavbarBottom>
+        <!-- <NavbarBottom></NavbarBottom> -->
         <Loading v-if="dashboardStore.loading"></Loading>
     </div>
 </template>

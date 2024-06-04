@@ -119,7 +119,8 @@ function getBoundingClent(){
     const {width} =  wrapCardBackground?.value ?  wrapCardBackground?.value?.getBoundingClientRect() : {};
     const data  = dashboardStore.getterPersonOnline;
 
-    for (let index = 0; index < data.length; index++) {
+    if(width){
+        for (let index = 0; index < data.length; index++) {
         let profileOnline = document.querySelector(`.wrap-profile-online:nth-child(${index+1})`);
         if(index === 0){
             profileOnline.style.left= '0px'
@@ -134,6 +135,7 @@ function getBoundingClent(){
                 profileOnline.style.left = `calc(${index}*1.8rem)`
             }
         }
+    }   
     }
 }
 </script>
